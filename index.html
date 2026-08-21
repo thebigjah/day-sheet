@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day Sheet, your day, on one page | Elijah Purcell</title>
 <meta name="description" content="A one-page daily planner you print and carry: three priorities, three gratitudes, hours 6am to 11pm. By Elijah Purcell, Purcell Ventures LLC.">
-<meta property="og:title" content="Day Sheet — your day, on one page">
+<meta property="og:title" content="Day Sheet, your day, on one page">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +53,7 @@
     line-height: 1.5;
     min-height: 100vh;
     padding: 1rem;
-    /* Dot-grid background — 5mm grid */
+    /* Dot-grid background, 5mm grid */
     background-image: radial-gradient(var(--dot) 1px, transparent 1px);
     background-size: 20px 20px;
     background-position: 10px 10px;
@@ -352,7 +352,7 @@
       <div class="date-display" id="date-display"></div>
       <div class="day-of-week" id="day-of-week"></div>
     </div>
-    <div class="quote" id="header-quote">"Teach us to number our days, that we may gain a heart of wisdom." — Psalm 90:12</div>
+    <div class="quote" id="header-quote">"Teach us to number our days, that we may gain a heart of wisdom.", Psalm 90:12</div>
   </div>
 
   <div class="sheet-row">
@@ -408,7 +408,7 @@
 
 <div class="footer-info">
   <p>Saved per date in your browser. <a href="https://github.com/thebigjah/day-sheet">github.com/thebigjah/day-sheet</a></p>
-  <div class="credit">— PURCELLVENTURES.CO —</div>
+  <div class="credit">, PURCELLVENTURES.CO,</div>
 </div>
 
 </div>
@@ -421,13 +421,13 @@ let allDays = load();
 let currentDate = todayKey();
 
 const HEADER_QUOTES = [
-  '"Teach us to number our days, that we may gain a heart of wisdom." — Psalm 90:12',
-  '"This is the day the Lord has made; let us rejoice and be glad in it." — Psalm 118:24',
-  '"Commit to the Lord whatever you do, and he will establish your plans." — Proverbs 16:3',
-  '"Do not be anxious about anything." — Philippians 4:6',
-  '"Be still, and know that I am God." — Psalm 46:10',
-  '"Whatever you do, work at it with all your heart, as working for the Lord." — Colossians 3:23',
-  '"Sufficient unto the day is the evil thereof." — Matthew 6:34 (KJV)',
+  '"Teach us to number our days, that we may gain a heart of wisdom.", Psalm 90:12',
+  '"This is the day the Lord has made; let us rejoice and be glad in it.", Psalm 118:24',
+  '"Commit to the Lord whatever you do, and he will establish your plans.", Proverbs 16:3',
+  '"Do not be anxious about anything.", Philippians 4:6',
+  '"Be still, and know that I am God.", Psalm 46:10',
+  '"Whatever you do, work at it with all your heart, as working for the Lord.", Colossians 3:23',
+  '"Sufficient unto the day is the evil thereof.", Matthew 6:34 (KJV)',
 ];
 
 function load() { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } }
